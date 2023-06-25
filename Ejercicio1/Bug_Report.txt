@@ -1,0 +1,23 @@
+Resumen/Título: Contenido del dropdown 'Sistemas' sobresale del contenedor
+
+Descripción: 
+Al acceder a la página principal del Ministerio de Salud de Venezuela (http://mpps.gob.ve/) y hacer hover
+sobre el elemento 'Sistemas' del menú superior, el contenido del dropdown se sale del contenedor.
+Esto sucede incluso al hacer scroll down dentro del contenedor.
+
+Precondiciones: 
+- Abrir la web en un navegador Chrome.
+
+Pasos para reproducir: 
+1. Acceder a http://mpps.gob.ve/
+2. Hacer hover en la sección 'Sistemas' del menú superior.
+3. Hacer scroll down dentro del menú desplegable.
+
+Resultado esperado:
+- El texto dentro del contenedor del menú desplegable se mantiene dentro de los límites del contenedor. 
+
+Resultado actual: 
+- El texto dentro del contedor del menú desplegable sobresale del contenedor.
+
+Evidencia:
+Ver vídeo ./min_salud_dropdown_overflow_bug1.mp4
