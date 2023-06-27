@@ -1,4 +1,4 @@
-const userData = require('./userData.json');
+import userData from "./userData.json" assert { type: 'json' }
 const url = "https://petstore.swagger.io/v2/"
 
 
@@ -25,7 +25,7 @@ async function postUser(data) {
 
 async function login(userName, password) {
   
-    const response = await fetch(`${url}user/login?username=${userName}&password=${password}`);
+  const response = await fetch(`${url}user/login?username=${userName}&password=${password}`);
   if (!response.ok) {
     throw new Error("Request failed with status " + response.status);
   }
@@ -42,7 +42,7 @@ async function getUser(userName) {
   return result;
 }
 
-
+//This function will print in the console the 3 requested calls
 async function main() {
   try {
     const newUser = await postUser(userData);
